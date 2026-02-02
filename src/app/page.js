@@ -1,7 +1,8 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "./styles/main.module.css";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
