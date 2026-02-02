@@ -1,0 +1,17 @@
+.navlink {
+        position: relative;
+      }
+      .navlink::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #3b82f6, #06b6d4);
+        transition: width 0.3s ease;
+      }
+      .navlink:hover::after,
+      .navlink.active::after {
+        width: 100%;
+      }

@@ -1,0 +1,40 @@
+ .glasscard {
+        background: rgba(30, 41, 59, 0.6);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(59, 130, 246, 0.3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      }
+      .codeblock {
+        background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+        border: 1px solid #334155;
+      }
+      .nav-link {
+        position: relative;
+      }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #3b82f6, #06b6d4);
+        transition: width 0.3s ease;
+      }
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        width: 100%;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1e293b;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3b82f6;
+        border-radius: 4px;
+        @view-transition {
+          navigation: auto;
+        }
+      }
