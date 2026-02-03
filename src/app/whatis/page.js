@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import styles from "./styles/whatis.module.css";
-import Navbar from "./components/Navbar";
+import styles from "../styles/whatis.module.css";
+import Navbar from "../components/Navbar";
 
 export default function whatis() {
   return (
@@ -126,6 +126,7 @@ export default function whatis() {
                     <br />
                     <div>
                       <span className="text-blue-400">className</span>
+                      <span> </span>
                       <span className="text-yellow-300">Hewan</span>
                       <span className="text-white">{"{"} </span>
                       <span className="text-gray-400">// Abstraction</span>

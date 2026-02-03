@@ -26,13 +26,13 @@ export default function Home() {
                       SMK RPL Learning Platform
                     </div>
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-white">
-                      Master
+                      Master{" "}
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-                        OOP
+                        OOP{" "}
                       </span>
-                      with
+                      with <br></br>
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
-                        C++
+                        C++{" "}
                       </span>
                     </h1>
                     <p className="text-xl text-gray-200 mb-8 leading-relaxed">
@@ -95,24 +95,24 @@ export default function Home() {
                           </span>
                         </div>
                         <div className="text-gray-400">
-                          using namespace stds;
+                          using namespace std;
                         </div>
                         <br />
                         <div>
-                          <span className="text-blue-400">class</span>
+                          <span className="text-blue-400">class </span>
                           <span className="text-yellow-300">Mahasiswa</span>
-                          <span className="text-white"></span>
+                          <span className="text-white">{"{"}</span>
                         </div>
                         <div className="pl-4">
                           <span className="text-blue-400">private</span>
                           <span className="text-white">:</span>
                         </div>
                         <div className="pl-8">
-                          <span className="text-cyan-300">string</span>
+                          <span className="text-cyan-300">string </span>
                           <span className="text-white">nama;</span>
                         </div>
                         <div className="pl-8">
-                          <span className="text-cyan-300">int</span>
+                          <span className="text-cyan-300">int </span>
                           <span className="text-white">nilai;</span>
                         </div>
                         <div className="pl-4">
@@ -120,34 +120,39 @@ export default function Home() {
                           <span className="text-white">:</span>
                         </div>
                         <div className="pl-8">
-                          <span className="text-yellow-300">Mahasiswa</span>
-                          <span className="text-white"></span>
-                          <span className="text-cyan-300">string</span>n
-                          <span className="text-white"></span>
+                          <span className="text-yellow-300">Mahasiswa </span>
+                          <span className="text-white">{"("}</span>
+                          <span className="text-cyan-300">string</span>
+                          <span className="text-white">{")"}</span>
+                          <span className="text-white">{"{"}</span>
                         </div>
                         <div className="pl-12">
                           <span className="text-white">nama = n;</span>
                         </div>
                         <div className="pl-8">
+                          <span className="text-white">{"}"}</span>
+                        </div>
+
+                        <div className="pl-8">
                           <span className="text-white"></span>
                         </div>
                         <div className="pl-8">
-                          <span className="text-cyan-300">void</span>
+                          <span className="text-cyan-300">void </span>
                           <span className="text-green-300">belajar</span>
-                          <span className="text-white"></span>
+                          <span className="text-white">{"() {"}</span>
                         </div>
                         <div className="pl-12">
-                          <span className="text-white">cout &lt;&lt;</span>
+                          <span className="text-white">cout &lt;&lt; </span>
                           <span className="text-orange-300">
                             "Sedang belajar OOP!"
                           </span>
                           <span className="text-white">;</span>
                         </div>
                         <div className="pl-8">
-                          <span className="text-white"></span>
+                          <span className="text-white">{"}"}</span>
                         </div>
                         <div>
-                          <span className="text-white">;</span>
+                          <span className="text-white">{"};"}</span>
                         </div>
                       </div>
                     </div>
