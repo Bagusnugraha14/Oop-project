@@ -36,10 +36,10 @@ export default function Navbar() {
         className={`${styles.navlink} text-gray-300 hover:text-white transition`}>
         Course
       </Link>
-              <a
-                href="mentor.html"
+              <Link
+                href="/mentor"
                 className={`${styles.navlink} text-gray-300 hover:text-white transition`}
-                >Mentor</a>
+                >Mentor</Link>
             </div>
             <button className="md:hidden text-white" onClick={() => toggleMobileMenu()}>
               <svg
