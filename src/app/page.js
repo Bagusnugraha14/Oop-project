@@ -44,14 +44,12 @@ export default function Home() {
                     <div className="flex flex-wrap gap-4">
                       <a
                         href="course.html"
-                        className={`${styles.glowblue} px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-xl font-semibold text-lg text-white hover:opacity-90 transition transform hover:scale-105`}
-                      >
+                        className={`${styles.glowblue} px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-xl font-semibold text-lg text-white hover:opacity-90 transition transform hover:scale-105`}>
                         Mulai Belajar →
                       </a>
                       <a
                         href="whatis.html"
-                        className={`${styles.glasscard} px-8 py-4 rounded-xl font-semibold text-lg text-white hover:bg-white/10 transition`}
-                      >
+                        className={`${styles.glasscard} px-8 py-4 rounded-xl font-semibold text-lg text-white hover:bg-white/10 transition`}>
                         Pelajari Lebih
                       </a>
                     </div>
@@ -78,8 +76,7 @@ export default function Home() {
                   </div>
                   <div className={styles.floatanimation}>
                     <div
-                      className={`${styles.codeblock} rounded-2xl overflow-hidden shadow-2xl`}
-                    >
+                      className={`${styles.codeblock} rounded-2xl overflow-hidden shadow-2xl`}>
                       <div className="flex items-center gap-2 px-4 py-3 bg-slate-800 border-b border-slate-700">
                         <div className="w-3 h-3 rounded-full bg-red-500"></div>
                         <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -98,7 +95,7 @@ export default function Home() {
                         <div className="text-gray-400">
                           using namespace std;
                         </div>
-                        <br />
+                        <br/>
                         <div>
                           <span className="text-blue-400">class </span>
                           <span className="text-yellow-300">Mahasiswa</span>
@@ -173,21 +170,18 @@ export default function Home() {
               </div>
               <div className="grid md:grid-cols-3 gap-8">
                 <div
-                  className={`${styles.glasscard} rounded-2xl p-8 hover:shadow-lg transition group`}
-                >
+                  className={`${styles.glasscard} rounded-2xl p-8 hover:shadow-lg transition group`}>
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center mb-6 group-hover:scale-110 transition">
                     <svg
                       className="w-7 h-7 text-white"
                       fill="none"
                       stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
+                      viewBox="0 0 24 24">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth="2"
-                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                      />
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-white">
@@ -199,21 +193,18 @@ export default function Home() {
                   </p>
                 </div>
                 <div
-                  className={`${styles.glasscard} rounded-2xl p-8 hover:shadow-lg transition group`}
-                >
+                  className={`${styles.glasscard} rounded-2xl p-8 hover:shadow-lg transition group`}>
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-6 group-hover:scale-110 transition">
                     <svg
                       className="w-7 h-7 text-white"
                       fill="none"
                       stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
+                      viewBox="0 0 24 24">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth="2"
-                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                      />
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-white">
@@ -225,21 +216,18 @@ export default function Home() {
                   </p>
                 </div>
                 <div
-                  className={`${styles.glasscard} rounded-2xl p-8 hover:shadow-lg transition group`}
-                >
+                  className={`${styles.glasscard} rounded-2xl p-8 hover:shadow-lg transition group`}>
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center mb-6 group-hover:scale-110 transition">
                     <svg
                       className="w-7 h-7 text-white"
                       fill="none"
                       stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
+                      viewBox="0 0 24 24">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth="2"
-                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                      />
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-white">

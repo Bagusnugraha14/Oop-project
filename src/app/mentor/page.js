@@ -2,7 +2,6 @@
 import { useState } from "react";
 import styles from "../styles/mentor.module.css";
 
-import '@fortawesome/fontawesome-free/css/all.min.css'
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -105,8 +104,7 @@ Belajar langsung dari guru berpengalaman yang siap membimbing perjalanan program
 <div
 key={mentor.id}
 onClick={()=>openMentorModal(mentor)}
-className="bg-slate-800 p-6 rounded-xl cursor-pointer hover:scale-105 transition"
->
+className="bg-slate-800 p-6 rounded-xl cursor-pointer hover:scale-105 transition">
 
 <div className="text-center">
 
@@ -115,8 +113,7 @@ className="bg-slate-800 p-6 rounded-xl cursor-pointer hover:scale-105 transition
 <img
 src={mentor.image}
 alt={mentor.name}
-className="w-20 h-20 rounded-full object-cover border-2 border-cyan-400"
-/>
+className="w-20 h-20 rounded-full object-cover border-2 border-cyan-400"/>
 
 </div>
 
@@ -128,10 +125,10 @@ className="w-20 h-20 rounded-full object-cover border-2 border-cyan-400"
 {mentor.title}
 </p>
 
-<p className="text-gray-400 text-xs mt-2">
-📚 {mentor.experience} pengalaman
+<p className="text-gray-400 text-xs mt-2 flex items-center justify-center gap-2">
+  <i className="fa-solid fa-briefcase"></i>
+  {mentor.experience} pengalaman
 </p>
-
 </div>
 
 </div>
@@ -152,25 +149,25 @@ Jadwal Konsultasi
 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
 
 <div className="bg-slate-800 rounded-xl p-6">
-<i className="fas fa-clock text-3xl text-cyan-400 mb-3"></i>
+<i className="fas fa-clock text-3xl mb-3"></i>
 <h4 className="font-semibold">Senin – Kamis</h4>
 <p className="text-gray-400 text-sm">14:00 - 16:00 WIB</p>
 </div>
 
 <div className="bg-slate-800 rounded-xl p-6">
-<i className="fas fa-calendar-day text-3xl text-cyan-400 mb-3"></i>
+<i className="fas fa-calendar-day text-3xl  mb-3"></i>
 <h4 className="font-semibold">Jumat</h4>
 <p className="text-gray-400 text-sm">13:00 - 15:00 WIB</p>
 </div>
 
 <div className="bg-slate-800 rounded-xl p-6">
-<i className="fas fa-comments text-3xl text-cyan-400 mb-3"></i>
+<i className="fas fa-comments text-3xl  mb-3"></i>
 <h4 className="font-semibold">Online Chat</h4>
 <p className="text-gray-400 text-sm">24/7 via Discord</p>
 </div>
 
 <div className="bg-slate-800 rounded-xl p-6">
-<i className="fas fa-envelope text-3xl text-cyan-400 mb-3"></i>
+<i className="fas fa-envelope text-3xl  mb-3"></i>
 <h4 className="font-semibold">Email Support</h4>
 <p className="text-gray-400 text-sm">Response &lt; 24 jam</p>
 </div>
@@ -205,16 +202,14 @@ Punya pertanyaan? Butuh bimbingan khusus? Hubungi kami!
 <label className="text-sm text-gray-300">Nama Lengkap</label>
 <input
 type="text"
-className="w-full mt-2 p-3 bg-slate-800 border border-slate-700 rounded-lg"
-/>
+className="w-full mt-2 p-3 bg-slate-800 border border-slate-700 rounded-lg"/>
 </div>
 
 <div>
 <label className="text-sm text-gray-300">Email</label>
 <input
 type="email"
-className="w-full mt-2 p-3 bg-slate-800 border border-slate-700 rounded-lg"
-/>
+className="w-full mt-2 p-3 bg-slate-800 border border-slate-700 rounded-lg"/>
 </div>
 
 </div>
@@ -248,8 +243,7 @@ Pesan
 <textarea
 rows="5"
 placeholder="Tuliskan pertanyaan atau topik yang ingin didiskusikan..."
-className="w-full mt-2 p-3 bg-slate-800 border border-slate-700 rounded-lg"
-/>
+className="w-full mt-2 p-3 bg-slate-800 border border-slate-700 rounded-lg"/>
 
 </div>
 
@@ -281,8 +275,7 @@ Kirim Pesan →
 <img
 src={selectedMentor.image}
 alt={selectedMentor.name}
-className="w-28 h-28 rounded-full object-cover border-4 border-cyan-400 shadow-lg"
-/>
+className="w-28 h-28 rounded-full object-cover border-4 border-cyan-400 shadow-lg"/>
 
 </div>
 
@@ -324,8 +317,7 @@ className="w-28 h-28 rounded-full object-cover border-4 border-cyan-400 shadow-l
 {selectedMentor.achievements.map((item,index)=>(
 <li
 key={index}
-className="flex items-start gap-3 text-gray-300 text-sm"
->
+className="flex items-start gap-3 text-gray-300 text-sm">
 
 <span className="text-yellow-400 text-lg">★</span>
 
@@ -351,8 +343,7 @@ className="flex items-start gap-3 text-gray-300 text-sm"
 {selectedMentor.expertise.map((skill,i)=>(
 <span
 key={i}
-className="px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 rounded-xl text-sm"
->
+className="px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 rounded-xl text-sm">
 {skill}
 </span>
 ))}
@@ -363,8 +354,7 @@ className="px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 roun
 
 <button
 onClick={closeMentorModal}
-className="w-full bg-blue-600 py-3 rounded-lg"
->
+className="w-full bg-blue-600 py-3 rounded-lg">
 Close
 </button>
 

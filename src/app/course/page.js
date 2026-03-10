@@ -211,6 +211,66 @@ const handleCopy = () => {
       {/* NAVBAR */}
        <Navbar />
 
+         {/* MOBILE MENU BUTTON */}
+  <div className="lg:hidden flex items-center p-4 border-b border-slate-700 bg-slate-900">
+    <button
+      onClick={() => setMobileOpen(true)}
+      className="text-white text-xl">
+      <i className="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+{/* MOBILE MENU BUTTON */}
+<div className="lg:hidden flex items-center p-4 border-b border-slate-700 bg-slate-900">
+  <button
+    onClick={() => setMobileOpen(true)}
+    className="text-white text-xl">
+    <i className="fa-solid fa-bars"></i>
+  </button>
+
+  <h2 className="ml-4 font-semibold">Course Modules</h2>
+</div>
+
+  {/* MOBILE SIDEBAR */}
+  {mobileOpen && (
+    <div className="fixed inset-0 z-[999] flex lg:hidden">
+
+      <div
+        onClick={() => setMobileOpen(false)}
+        className="absolute inset-0 bg-black/60">
+        </div>
+
+      <aside className="relative w-72 bg-slate-900 border-r border-slate-700 p-6 overflow-y-auto">
+
+        <div className="flex justify-between items-center mb-6">
+          <h2 className="font-bold text-lg">Modul</h2>
+
+          <button
+            onClick={() => setMobileOpen(false)}
+            className="text-xl">
+            <i className="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        {/* modules */}
+        <div className="space-y-3">
+          {modules.map((mod) => (
+            <div
+              key={mod.id}
+              onClick={() => {
+                setActiveModule(mod.id);
+                setMobileOpen(false);
+              }}
+              className="p-4 rounded-xl bg-slate-800 border border-slate-700 cursor-pointer hover:border-blue-500">
+              {mod.title}
+            </div>
+          ))}
+        </div>
+
+      </aside>
+
+    </div>
+  )}
       <div className="flex pt-16">
 
         {/* SIDEBAR */}
@@ -229,12 +289,9 @@ const handleCopy = () => {
         key={mod.id}
         onClick={() => setActiveModule(mod.id)}
         className={`group relative p-4 rounded-xl cursor-pointer transition-all duration-300 
-        ${
-          activeModule === mod.id
+        ${activeModule === mod.id
             ? "bg-gradient-to-r from-blue-600/40 to-cyan-500/30 border border-blue-500 shadow-lg shadow-blue-900/30"
-            : "bg-slate-800/50 border border-slate-700 hover:border-blue-500 hover:bg-slate-800"
-        }`}
-      >
+            : "bg-slate-800/50 border border-slate-700 hover:border-blue-500 hover:bg-slate-800"}`}>
         {/* Active indicator */}
         {activeModule === mod.id && (
           <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-cyan-400 rounded-l-xl"></div>
@@ -245,12 +302,9 @@ const handleCopy = () => {
           {/* Number badge */}
           <div
             className={`w-10 h-10 flex items-center justify-center rounded-lg font-bold transition-all duration-300
-            ${
-              activeModule === mod.id
+            ${activeModule === mod.id
                 ? "bg-blue-500 text-white"
-                : "bg-slate-700 text-blue-300 group-hover:bg-blue-500 group-hover:text-white"
-            }`}
-          >
+                : "bg-slate-700 text-blue-300 group-hover:bg-blue-500 group-hover:text-white"}`}>
             {mod.id}
           </div>
 
@@ -300,8 +354,7 @@ const handleCopy = () => {
       {module.topics.map((topic, i) => (
         <li
           key={i}
-          className="bg-slate-800 border border-slate-700 px-4 py-3 rounded-lg hover:border-blue-500 hover:bg-slate-700 transition"
-        >
+          className="bg-slate-800 border border-slate-700 px-4 py-3 rounded-lg hover:border-blue-500 hover:bg-slate-700 transition">
           {topic}
         </li>
       ))}
@@ -316,8 +369,7 @@ const handleCopy = () => {
         
         <button
   onClick={handleCopy}
-  className="text-xs bg-slate-700 px-3 py-1 rounded hover:bg-slate-600"
->
+  className="text-xs bg-slate-700 px-3 py-1 rounded hover:bg-slate-600">
   Copy
 </button>
         
@@ -343,8 +395,7 @@ const handleCopy = () => {
     style: {
       background: "transparent",
     }
-  }}
->
+  }}>
   {module.code}
 </SyntaxHighlighter>
   </div>
@@ -362,8 +413,7 @@ const handleCopy = () => {
         {module.exercises.map((ex, i) => (
           <div
             key={i}
-            className="group bg-slate-800/60 backdrop-blur border border-slate-700 rounded-xl p-6 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-900/30 transition duration-300"
-          >
+            className="group bg-slate-800/60 backdrop-blur border border-slate-700 rounded-xl p-6 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-900/30 transition duration-300">
             <h4 className="font-semibold text-lg text-white mb-2">
               {ex.title}
             </h4>
@@ -374,8 +424,7 @@ const handleCopy = () => {
 
             <button
               onClick={() => openExercise(ex)}
-              className="px-5 py-2.5 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-medium hover:scale-105 transition transform"
-            >
+              className="px-5 py-2.5 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-medium hover:scale-105 transition transform">
               Mulai Latihan →
             </button>
 
@@ -402,29 +451,24 @@ const handleCopy = () => {
       <textarea
         value={codeValue}
         onChange={(e) => setCodeValue(e.target.value)}
-        className="w-full h-64 p-4 rounded-xl bg-slate-800 text-blue-200 code-font border border-slate-700 focus:outline-none focus:border-blue-500 mb-5"
-      />
-
+        className="w-full h-64 p-4 rounded-xl bg-slate-800 text-blue-200 code-font border border-slate-700 focus:outline-none focus:border-blue-500 mb-5"/>
       <div className="flex gap-3 mb-5">
 
         <button
           onClick={runCode}
-          className="px-5 py-2 rounded-lg bg-green-600 hover:bg-green-500 transition"
-        >
+          className="px-5 py-2 rounded-lg bg-green-600 hover:bg-green-500 transition">
            Run
         </button>
 
         <button
           onClick={() => setCodeValue(activeExercise.starter)}
-          className="px-5 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 transition"
-        >
+          className="px-5 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 transition">
           Reset
         </button>
 
         <button
           onClick={() => setModalOpen(false)}
-          className="px-5 py-2 rounded-lg bg-red-600 hover:bg-red-500 ml-auto transition"
-        >
+          className="px-5 py-2 rounded-lg bg-red-600 hover:bg-red-500 ml-auto transition">
           Close
         </button>
 
@@ -454,10 +498,7 @@ const handleCopy = () => {
       border border-slate-700
       shadow-md
       text-sm
-      text-gray-200
-    ">
-    
-
+      text-gray-200">
       <span>Code copied</span>
 
     </div>

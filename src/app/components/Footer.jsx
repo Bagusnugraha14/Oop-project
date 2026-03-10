@@ -27,36 +27,32 @@ export default function Footer() {
                 <h4 className="font-bold mb-4 text-white">Quick Links</h4>
                 <ul className="space-y-2 text-gray-300 text-sm">
                   <li>
-                    <a
-                      href="index.html"
-                      className="hover:text-white transition"
-                    >
+                    <Link
+                      href="/"
+                      className="hover:text-white transition">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="whatis.html"
-                      className="hover:text-white transition"
-                    >
+                    <Link
+                      href="/whatis"
+                      className="hover:text-white transition">
                       What is OOP
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="course.html"
-                      className="hover:text-white transition"
-                    >
+                    <Link
+                      href="/course"
+                      className="hover:text-white transition">
                       Course
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="mentor.html"
-                      className="hover:text-white transition"
-                    >
+                    <Link
+                      href="/mentor"
+                      className="hover:text-white transition">
                       Mentor
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -85,14 +81,25 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
-              <div>
-                <h4 className="font-bold mb-4 text-white">Contact</h4>
-                <ul className="space-y-2 text-gray-300 text-sm">
-                  <li>📍 SMK Negeri 1 Indonesia</li>
-                  <li>📧 rpl@smk.sch.id</li>
-                  <li>📞 (021) 1234567</li>
-                </ul>
-              </div>
+             <div>
+  <h4 className="font-bold mb-4 text-white">Contact</h4>
+  <ul className="space-y-2 text-gray-300 text-sm">
+    <li className="flex items-center gap-2">
+      <i className="fa-solid fa-location-dot text-gray-300"></i>
+      SMK Negeri 1 Indonesia
+    </li>
+
+    <li className="flex items-center gap-2">
+      <i className="fa-solid fa-envelope text-gray-300"></i>
+      rpl@smk.sch.id
+    </li>
+
+    <li className="flex items-center gap-2">
+      <i className="fa-solid fa-phone text-gray-300"></i>
+      (021) 1234567
+    </li>
+  </ul>
+</div>
             </div>
             <div className="border-t border-slate-700 mt-8 pt-8 text-center text-gray-500 text-sm">
               © 2024 OOP C++ Learning Platform. All rights reserved.

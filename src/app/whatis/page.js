@@ -48,8 +48,7 @@ export default function whatis() {
                   </p>
                   <div className="space-y-4">
                     <div
-                      className={`${styles.glasscard} rounded-xl p-4 flex items-start gap-4`}
-                    >
+                      className={`${styles.glasscard} rounded-xl p-4 flex items-start gap-4`}>
                       <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center flex-shrink-0">
                         <span className="text-blue-400 font-bold">1</span>
                       </div>
@@ -63,8 +62,7 @@ export default function whatis() {
                       </div>
                     </div>
                     <div
-                      className={`${styles.glasscard} rounded-xl p-4 flex items-start gap-4`}
-                    >
+                      className={`${styles.glasscard} rounded-xl p-4 flex items-start gap-4`}>
                       <div className="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center flex-shrink-0">
                         <span className="text-green-400 font-bold">2</span>
                       </div>
@@ -79,8 +77,7 @@ export default function whatis() {
                       </div>
                     </div>
                     <div
-                      className={`${styles.glasscard} rounded-xl p-4 flex items-start gap-4`}
-                    >
+                      className={`${styles.glasscard} rounded-xl p-4 flex items-start gap-4`}>
                       <div className="w-10 h-10 rounded-lg bg-yellow-500/20 flex items-center justify-center flex-shrink-0">
                         <span className="text-yellow-400 font-bold">3</span>
                       </div>
@@ -94,8 +91,7 @@ export default function whatis() {
                       </div>
                     </div>
                     <div
-                      className={`${styles.glasscard} rounded-xl p-4 flex items-start gap-4`}
-                    >
+                      className={`${styles.glasscard} rounded-xl p-4 flex items-start gap-4`}>
                       <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center flex-shrink-0">
                         <span className="text-red-400 font-bold">4</span>
                       </div>
@@ -112,8 +108,7 @@ export default function whatis() {
                   </div>
                 </div>
                 <div
-                  className={`${styles.glasscard} rounded-2xl overflow-hidden`}
-                >
+                  className={`${styles.glasscard} rounded-2xl overflow-hidden`}>
                   <div className="flex items-center gap-2 px-4 py-3 bg-slate-800 border-b border-slate-700">
                     <div className="w-3 h-3 rounded-full bg-red-500"></div>
                     <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -124,7 +119,7 @@ export default function whatis() {
                   </div>
                   <div className="p-6 code-font text-sm leading-relaxed">
                     <div className="text-gray-400">// Contoh 4 Pilar OOP</div>
-                    <br />
+                    <br/>
                     <div>
                       <span className="text-blue-400">className</span>
                       <span> </span>
@@ -156,7 +151,7 @@ export default function whatis() {
                     <div>
                       <span className="text-white">{"}"};</span>
                     </div>
-                    <br />
+                    <br/>
                     <div>
                       <span className="text-blue-400">className</span>
                       <span className="text-yellow-300">Kucing</span>
