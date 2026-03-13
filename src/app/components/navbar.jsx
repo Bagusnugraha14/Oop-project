@@ -1,8 +1,17 @@
-import React from "react";
+"use client"
+
+import React, { useState } from "react";
 import styles from "../styles/navbar.module.css";
 import Link from "next/link";
 
 export default function Navbar() {
+
+  // nanti ini diganti data dari backend Laravel
+  const user = { name: "Drain" } // ganti dengan nama user jika sudah login
+
+  // const user = null; //    // code blom login //  
+
+  const [open, setOpen] = useState(false)
 
   function toggleMobileMenu() {
     const menu = document.getElementById("mobile-menu");
@@ -43,12 +52,51 @@ export default function Navbar() {
               Mentor
             </Link>
 
-            {/* LOGIN BUTTON */}
-<Link
-  href="/login_menu"
-  className="ml-4 px-5 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition">
-  Login
-</Link>
+            {/* LOGIN / USER */}
+            {!user ? (
+
+              <Link
+                href="/login_menu"
+                className="ml-4 px-5 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition">
+                Login
+              </Link>
+
+            ) : (
+
+              <div className="relative ml-4">
+
+                {/* USER ICON */}
+                <button
+                  onClick={() => setOpen(!open)}
+                  className="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center text-white hover:bg-slate-600 transition">
+                  <i className="fa-solid fa-user"></i>
+                </button>
+
+                {/* POPUP PROFILE */}
+                {open && (
+                  <div className="absolute right-0 mt-3 w-56 bg-slate-900 border border-slate-700 rounded-xl shadow-lg p-4">
+
+                    <div className="flex items-center gap-3 mb-3">
+
+                      <img src="/images/default-profile.jpg" className="w-10 h-10 rounded-full"/>
+
+                      <span className="text-white font-medium">
+                        {user.name}
+                      </span>
+
+                    </div>
+
+                    <button
+                      className="w-full py-2 rounded-lg bg-red-500 hover:bg-red-600 text-white text-sm transition">
+                      Logout
+                    </button>
+
+                  </div>
+                )}
+
+              </div>
+
+            )}
 
           </div>
 
@@ -94,13 +142,20 @@ export default function Navbar() {
             Mentor
           </Link>
 
-          {/* LOGIN MOBILE */}
           <div className="border-t border-slate-700 pt-3"></div>
- <Link
-    href="/login_menu"
-    className="flex items-center justify-center w-full px-4 py-3 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-500 transition shadow-lg">
-    Login
-  </Link>
+
+          {!user ? (
+            <Link
+              href="/login_menu"
+              className="flex items-center justify-center w-full px-4 py-3 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-500 transition shadow-lg">
+              Login
+            </Link>
+          ) : (
+            <button
+              className="flex items-center justify-center w-full px-4 py-3 rounded-xl bg-red-500 text-white font-medium hover:bg-red-600 transition shadow-lg">
+              Logout
+            </button>
+          )}
 
         </div>
       </div>
