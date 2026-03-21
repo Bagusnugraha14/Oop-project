@@ -7,14 +7,17 @@ export default function LoginMenu() {
     <div className="font-poppins min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0f2a4a] to-[#071a2e] relative px-4">
 
       {/* Back Button */}
-      <Link
-        href="/"
-        className="absolute top-5 left-5 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-slate-200 hover:bg-white/20 transition"
-      >
-        <i className="fa-solid fa-arrow-left"></i>
-      </Link>
+   <div className="absolute top-6 left-20">
+   <Link
+    href="/"
+    className="inline-flex items-center gap-2 text-white/80 hover:text-blue-300 transition text-md">
+    <i className="fa-solid fa-angle-left "></i>
+    <span>Home Page</span>
+    </Link>
+    </div>
 
       <div className="w-full max-w-[420px] p-6 sm:p-8 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.4)]">
+      
 
         {/* Logo */}
         <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-5 rounded-2xl bg-gradient-to-br from-sky-400 to-blue-600 flex items-center justify-center shadow-lg shadow-sky-500/40">

@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 
 export default function LoginGuru() {
   const [showPassword, setShowPassword] = useState(false)
@@ -8,15 +9,17 @@ export default function LoginGuru() {
   return (
     <div className="font-poppins min-h-screen flex items-center justify-center bg-[#0b1f3a] px-4">
 
-      <div className="w-full max-w-md p-6 sm:p-8 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.4)]">
+        {/* Back */}
+      <div className="absolute top-6 left-20">
+   <Link
+    href="/login_menu"
+    className="inline-flex items-center gap-2 text-white/80 hover:text-blue-300 transition text-md">
+    <i className="fa-solid fa-angle-left "></i>
+    <span>Login Menu</span>
+    </Link>
+    </div>
 
-        {/* Back Button */}
-        <button
-          onClick={() => (window.location.href = "/login_menu")}
-          className="flex items-center gap-2 text-slate-300 text-base sm:text-lg mb-6 hover:text-white transition">
-          <i className="fa-solid fa-chevron-left"></i>
-          <span>Kembali</span>
-        </button>
+      <div className="w-full max-w-md p-6 sm:p-8 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.4)]">
 
         {/* Icon */}
         <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-5 rounded-2xl bg-blue-600 flex items-center justify-center text-xl sm:text-2xl text-white shadow-lg">

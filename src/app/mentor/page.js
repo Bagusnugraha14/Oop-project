@@ -247,10 +247,8 @@ className="w-full mt-2 p-3 bg-slate-800 border border-slate-700 rounded-lg"/>
 
 </div>
 
-<button
-className="w-full py-4 rounded-xl font-semibold bg-gradient-to-r from-blue-600 to-cyan-500 hover:opacity-90 transition"
->
-Kirim Pesan →
+<button className="w-full py-4 rounded-xl font-semibold border border-blue-600 text-blue-500 bg-transparent hover:bg-blue-600 hover:text-white transition-all duration-300">
+  Kirim Pesan 
 </button>
 
 </form>
@@ -293,11 +291,11 @@ className="w-28 h-28 rounded-full object-cover border-4 border-cyan-400 shadow-l
 
 <div className="bg-slate-800/70 border border-slate-700 rounded-xl p-5 mb-6">
 
-<h3 className="text-lg font-semibold text-cyan-400 mb-3 flex items-center gap-2">
+<h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
  Tentang Guru
 </h3>
 
-<p className="text-gray-300 leading-relaxed text-sm">
+<p className="text-white/60 leading-relaxed text-sm">
 {selectedMentor.description}
 </p>
 
@@ -308,16 +306,14 @@ className="w-28 h-28 rounded-full object-cover border-4 border-cyan-400 shadow-l
 
 <div className="bg-slate-800/70 border border-slate-700 rounded-xl p-5 mb-6">
 
-<h3 className="text-lg font-semibold text-cyan-400 mb-3 flex items-center gap-2">
+<h3 className="text-lg font-semibold text-white  mb-3 flex items-center gap-2">
  Prestasi Guru
 </h3>
 
 <ul className="space-y-3">
 
 {selectedMentor.achievements.map((item,index)=>(
-<li
-key={index}
-className="flex items-start gap-3 text-gray-300 text-sm">
+<li key={index} className="flex items-start gap-3 text-white/60 text-sm">
 
 <span className="text-yellow-400 text-lg">★</span>
 
@@ -334,7 +330,7 @@ className="flex items-start gap-3 text-gray-300 text-sm">
 
 <div className="bg-slate-800/70 border border-slate-700 rounded-xl p-5 mb-6">
 
-<h3 className="text-lg font-semibold text-cyan-400 mb-3 flex items-center gap-2">
+<h3 className="text-lg font-semibold text-white  mb-3 flex items-center gap-2">
  Keahlian Guru
 </h3>
 
